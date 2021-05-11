@@ -26,6 +26,9 @@ public class ClientController {
     public Mono<ResponseEntity<String>> processStock(@RequestBody CatalogStock catalogStock) {
 
         return catalogService.process(catalogStock)
-                .map(s -> ResponseEntity.status(HttpStatus.CREATED).body("successful"));
+                .map(s -> {
+                    System.out.println("Request successful");
+                    return ResponseEntity.status(HttpStatus.CREATED).body("successful");
+                });
     }
 }
