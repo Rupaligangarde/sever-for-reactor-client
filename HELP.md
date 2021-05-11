@@ -22,14 +22,6 @@ curl --location --request POST 'http://localhost:8080/v1/pubsub-message' \
 --header 'Content-Type: application/json' \
 --data-raw ' {
 "variantId": "110012",
-"sellerId": "SOME_SELLER",
-"offeringId": "110011",
-"stockGeoTypeKey": "Facility",
-"stockGeoTypeId": "2103",
-"shippingOptionType": "SiteToStore",
-"stateOfStock": "InStock",
-"hasStock": true,
-"quantity": 100,
-"sourceUpdatedAt": "2020-07-18T11:33:34.000Z"
+"sellerId": "SOME_SELLER"
 }'
 ```

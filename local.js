@@ -3,15 +3,7 @@ const fetch = require('node-fetch');
 const clientEndpoint = "http://localhost:8080/v1/pubsub-message";
 const reqBody = JSON.stringify({
     "variantId": "110012",
-    "sellerId": "SOME_SELLER",
-    "offeringId": "110011",
-    "stockGeoTypeKey": "Facility",
-    "stockGeoTypeId": "2103",
-    "shippingOptionType": "SiteToStore",
-    "stateOfStock": "InStock",
-    "hasStock": true,
-    "quantity": 100,
-    "sourceUpdatedAt": "2020-07-18T11:33:34.000Z"
+    "seller": "SOME_SELLER"
 });
 
 const performPost = async() =>{

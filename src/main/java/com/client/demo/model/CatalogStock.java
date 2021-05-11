@@ -12,12 +12,4 @@ import lombok.NoArgsConstructor;
 public class CatalogStock {
     private String variantId;
     private String sellerId;
-    private String offeringId;
-    private String stockGeoTypeKey;
-    private String stockGeoTypeId;
-    private String shippingOptionType;
-    private String stateOfStock;
-    private Boolean hasStock;
-    private Integer quantity;
-    private String sourceUpdatedAt;
 }

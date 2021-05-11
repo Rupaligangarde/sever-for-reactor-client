@@ -44,7 +44,7 @@ public class CatalogService {
         );
 
         String bundleItemId = catalogStock.getVariantId();
-        List<CatalogStock> zeroQuantityStock = List.of(new CatalogStock(bundleItemId, null, bundleItemId, null, null, null, "OutOfStock", false, 0, null));
+        List<CatalogStock> zeroQuantityStock = List.of(new CatalogStock(bundleItemId, "SOME_SELLER"));
         return Flux.fromIterable(variantIds)
                 .parallel()
                 .runOn(Schedulers.boundedElastic())
