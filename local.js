@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 const clientEndpoint = "http://localhost:8080/v1/pubsub-message";
 const reqBody = JSON.stringify({
     "variantId": "110012",
-    "sellerId": "FALABELLA_CHILE",
+    "sellerId": "SOME_SELLER",
     "offeringId": "110011",
     "stockGeoTypeKey": "Facility",
     "stockGeoTypeId": "2103",
